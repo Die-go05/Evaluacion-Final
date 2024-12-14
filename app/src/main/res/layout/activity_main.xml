@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Formulario de Direcciones"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="16dp" />
+
+        <EditText
+            android:id="@+id/editTextCalle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Calle"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextCiudad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ciudad"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextProvincia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Provincia"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextComuna"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Comuna"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enviar"
+            android:onClick="enviarDatosFirestore"/>
+
+        <Button
+            android:id="@+id/buttonCargar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cargar"
+            android:onClick="CargarLista"/>
+
+
+        <ListView
+            android:id="@+id/lista"
+            android:layout_width="wrap_content"
+            android:layout_height="198dp" />
+
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mensajemqtt"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="16dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

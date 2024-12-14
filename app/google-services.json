@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "482048434532",
+    "project_id": "evaluacionfinal-81f8a",
+    "storage_bucket": "evaluacionfinal-81f8a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:482048434532:android:8af7f2ee95e9224be6da71",
+        "android_client_info": {
+          "package_name": "com.diegoabarca.evaluacionfinal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLKlZ_exXaf7Ag8Q7NQhYO-KiDiJd4iGc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
